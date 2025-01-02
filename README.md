@@ -62,7 +62,7 @@ python train.py
 
 - **Hugging Face Model**: [bdereliuni/turkish-sms-spam-detection-v2](https://huggingface.co/bdereliuni/turkish-sms-spam-detection-v2)
 - **Gradio Demo**: [Türkçe SMS Spam Detection (v2space)](https://huggingface.co/spaces/bdereliuni/turkish-sms-spam-v2space)
-- **Daha Detaylı Arayüz + Web API**: [Türkçe SMS Spam Detection]([https://turkish-sms-spam.herokuapp.com](https://huggingface.co/spaces/bdereli/turkish-sms-spam-detection)
+- **Daha Detaylı Arayüz + Web API**: [Türkçe SMS Spam Detection](https://turkish-sms-spam.herokuapp.com](https://huggingface.co/spaces/bdereli/turkish-sms-spam-detection)
 
 ## 5. Sonuçlar ve Gelecek Çalışmalar
 
