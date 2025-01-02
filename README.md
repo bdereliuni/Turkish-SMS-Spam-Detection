@@ -29,3 +29,46 @@ Tüm paketleri tek komutla kurmak için:
 
 ```bash
 pip install -r requirements.txt
+
+## 2.2 Dosya Yapısı
+
+- **train.py**  
+  Model eğitimi ve değerlendirme işlemlerini gerçekleştiren temel Python scripti.
+
+- **requirements.txt**  
+  Gerekli Python paketlerinin listesini içerir.
+
+- **README.md**  
+  Projenin tanıtımı, kurulum ve kullanım rehberi.
+
+---
+
+## 3. Eğitim Adımları
+
+1. **Veri Yükleme ve Temizlik**  
+   - `TurkishSMSCollection.csv` dosyası okunur, duplikasyon ve eksik değer temizliği yapılır.  
+   - Mesajlar lowercase’e dönüştürülür, `LabelEncoder` ile spam/normal etiketleri sayısallaştırılır.
+
+2. **Veri Seti Bölme**  
+   - Eğitim, doğrulama ve test kümeleri ayrılır (%80 / %20).  
+   - Doğrulama için ayrıca eğitim setinden bir %10’luk kısım kullanılır.
+
+3. **Tokenizer**  
+   - `dbmdz/bert-base-turkish-cased` tokenizer kullanarak metinleri 128 tokena kadar keser/pad eder.
+
+4. **Model Eğitimi**  
+   - BERT tabanlı sınıflandırma modeli (`AutoModelForSequenceClassification`)  
+   - `Trainer` API ile eğitim, `EarlyStoppingCallback`, class weight vb. stratejiler.
+
+5. **Değerlendirme**  
+   - Test seti üzerinde accuracy, F1, precision, recall vb. metrikler hesaplanır.  
+   - Model final değerlendirme sonrası kaydedilir.
+
+---
+
+## 4. Nasıl Çalıştırılır?
+
+1. **Bu projeyi klonlayın veya indirin**:
+   ```bash
+   git clone https://github.com/bdereliuni/Turkish-SMS-Spam-Detection.git
+   cd Turkish-SMS-Spam-Detection
