@@ -2,7 +2,7 @@
 # Türkçe SMS Spam Tespiti
 
 Bu proje, Türkçe SMS mesajlarında spam tespiti yapan bir derin öğrenme modelini içermektedir. BERT tabanlı model, yüksek doğrulukla spam/normal SMS sınıflandırması yapabilmektedir.
-**Eğitim İçin Dataset**: [onrkrsy/TurkishSMS-Collection](https://github.com/onrkrsy/TurkishSMS-Collection/blob/main/TurkishSMSCollection.csv)
+-**Eğitim İçin Dataset**: [onrkrsy/TurkishSMS-Collection](https://github.com/onrkrsy/TurkishSMS-Collection/blob/main/TurkishSMSCollection.csv)
 
 ## 1. Dosya Yapısı
 
