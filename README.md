@@ -29,6 +29,7 @@ Tüm paketleri tek komutla kurmak için:
 
 ```bash
 pip install -r requirements.txt
+```
 
 ## 2.2 Dosya Yapısı
 
